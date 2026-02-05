@@ -3,7 +3,7 @@
 //
 #pragma once
 #include <string>
-#include "../sqlite3.h"
+#include "../ExtarnalLibraries/sqlite3.h"
 
 
 
