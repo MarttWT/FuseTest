@@ -6,8 +6,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(FuseTest
         main.cpp
-        sql.cpp
-        sql.h
+        sqlH/sql.cpp
+        sqlH/sql.h
         sqlite3.c
         sqlite3.h
 )

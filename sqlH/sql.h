@@ -3,7 +3,7 @@
 //
 #pragma once
 #include <string>
-#include "sqlite3.h"
+#include "../sqlite3.h"
 
 
 
@@ -16,7 +16,7 @@ public:
     explicit sql();
     void close() const;
 
-    const void queryProfesores(const char *query) const;
+    void queryProfesores(const char *query) const;
 };
 
 
