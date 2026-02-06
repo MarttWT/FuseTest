@@ -1,9 +1,11 @@
 #include "sqlH/sql.h"
+#include "usrH/usr.h"
 
 int main() {
     //Se inicializa la base de datos que se va a usar
-    sql db = sql();
+    std::pmr::string Nombre = "Marco";
+    usr M(Nombre);
     //Dentro de la clase sql se llama a la queryProfesores, funcion para obtener los datos
-    db.queryProfesores("SELECT  Nombre, Tipo_De_Clase, Fecha, strftime('%H:%M', Hora) FROM clases, profesores WHERE Nombre='Pedro'");
+    M.UserData();
     return 0;
 }

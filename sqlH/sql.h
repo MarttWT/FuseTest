@@ -3,7 +3,7 @@
 //
 #pragma once
 #include <string>
-#include "../ExtarnalLibraries/sqlite3.h"
+#include "../ExternalLibraries/sqlite3.h"
 
 
 
@@ -15,7 +15,6 @@ public:
     explicit sql(const std::string &File);
     explicit sql();
     void close() const;
-
     void queryProfesores(const char *query) const;
 };
 

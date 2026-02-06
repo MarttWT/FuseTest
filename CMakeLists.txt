@@ -8,8 +8,10 @@ add_executable(FuseTest
         main.cpp
         sqlH/sql.cpp
         sqlH/sql.h
-        ExtarnalLibraries/sqlite3.c
-        ExtarnalLibraries/sqlite3.h
+        ExternalLibraries/sqlite3.c
+        ExternalLibraries/sqlite3.h
+        usrH/usr.cpp
+        usrH/usr.h
 )
 
 target_include_directories(FuseTest PRIVATE

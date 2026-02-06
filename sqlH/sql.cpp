@@ -11,9 +11,7 @@ sql::sql(const std::string &File) {
     sqlite3_open(File.c_str(), &db);
 }
 
-sql::sql() {
-    sqlite3_open("C:/Users/marco/CLionProjects/FuseTest/schema1", &db);
-}
+sql::sql():sql("C:/Users/marco/CLionProjects/FuseTest/schema1"){}
 
 void sql::close() const {
     sqlite3_close(db);
